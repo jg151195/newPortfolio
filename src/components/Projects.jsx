@@ -3,22 +3,20 @@ import myProjects from "../projects.json";
 
 export default function Projects() {
 
-    const projects = myProjects.map(({ name, description, languages }) => {
+    const projects = myProjects.map(({ name, description, languages },index) => {
         return (
-            <div className="projects-box">
+            <div key={index} className="projects-box">
                 <h2>{name}</h2>
                 <p>{description}</p>
-                {languages.map(item => {
+                {languages.map((item,index) => {
                     return (
-                        <span>{item}</span>
+                        <span key={index}>{item}</span>
                     )})
                 }
-                <img src="."></img>
+                <img src=""></img>
             </div>
         )
     })
-
-    console.log(projects)
 
     return (
         <div className="projects-container">

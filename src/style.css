@@ -15,7 +15,7 @@
     align-self: center;
     background-color: none;
     font-size: 1.5em;
-    padding: 1.5em;
+    padding: 1em;
 }
 
 .navbar-labels {
@@ -23,10 +23,20 @@
     justify-content: space-around;
     align-items: center;
     margin-left: 30em;
+    
 }
 
-.navbar-labels>label {
+.navbar-labels>span {
+    cursor: pointer;
+    padding: 12px;
     margin: 1em;
+    background-color: transparent;
+    transition: 0.7s;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-labels>span:hover{
+    border-bottom: 2px solid #61dbfb;
 }
 
 .switch {
@@ -86,12 +96,13 @@ input:checked+.slider:before {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
 }
+
+
 
 .about-container>img {
     margin-top: 1em;
-    width: 15em;
+    width: 13em;
     border-radius: 20em;
 }
 
@@ -103,20 +114,45 @@ input:checked+.slider:before {
 
 .about-container>h2 {
     font-size: 3em;
-    margin: 1.5em;
+    margin: 1em;
 }
 
 .about-container>p {
+    text-align: center;
     font-size: 1.5em;
     margin-bottom: 2em;
+    width: 50%;
 }
 
 .about-social {
     font-size: 1.5em;
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    width: 12%;
+    width: 18%;
     margin-bottom: 2em;
+}
+
+.about-social>a{
+    color: white;
+    font-size: 1.5em;
+    transition: 0.2s;
+}
+
+.about-social>a:hover{
+    transform: scale(1.1);
+}
+
+#cv {
+    text-decoration: none;
+    padding: 4px;
+    border-bottom: solid transparent 3px;
+    transition: 0.7s;
+}
+
+#cv:hover{
+    transform: scale(1.0);
+    border-bottom: 3px solid #61dbfb;
 }
 
 .projects-container {

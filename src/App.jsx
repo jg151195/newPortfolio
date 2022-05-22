@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='app' style={darkMode === false ? {backgroundColor:'white'}: {backgroundColor:'#212121', color:'#e8e8e8'}}>
       <NavBar/>
-      <About/>
+      <About darkMode={darkMode}/>
       <Projects/>
     </div>
     
