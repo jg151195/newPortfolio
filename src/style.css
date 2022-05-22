@@ -35,6 +35,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    min-width: 25%;
 }
 
 #darkmode:hover {
@@ -342,11 +344,13 @@
     align-items: center;
     justify-content: space-around;
     width: 50%;
+    flex-wrap: wrap;
     transition: .2s;
 }
 
 .contact-content>a {
     font-size: 3em;
+    margin: 0.7em;
     transition: .2s;
 }
 
