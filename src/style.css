@@ -37,6 +37,18 @@
     align-items: center;
 }
 
+#darkmode:hover {
+    color: #61dbfb;
+    border-bottom: 2px solid #61dbfb;
+    transform: scale(1.2);
+}
+
+#darkmode{
+    transition: 0.4s;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
 .navbar-labels>span {
     cursor: pointer;
     padding: 12px;

@@ -21,8 +21,8 @@ export default function NavBar({ setDarkMode, darkMode }) {
                 <span onClick={()=>goTo('#skills')}>skills</span>
                 <span onClick={()=>goTo('#formations')}>education</span>
                 <span onClick={()=>goTo('#contact')}>contact</span>
-                <span onClick={clickDarkMode}>{darkMode === true ? <BsFillSunFill /> : <BsFillMoonFill />}</span>
             </div>
+            <span id="darkmode" onClick={clickDarkMode}>{darkMode === true ? <BsFillSunFill /> : <BsFillMoonFill />}</span>       
         </div>
     )
 }
