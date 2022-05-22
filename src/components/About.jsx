@@ -12,7 +12,7 @@ export default function About({darkMode}){
     return (
         <div className="about-container">
             <img src={eu}></img>
-            <h1>Hi, i'm <label style={{color: '#61dbfb'}}>João Gabriel.</label></h1>
+            <h1>Hi, I'm <label style={{color: '#61dbfb'}}>João Gabriel.</label></h1>
             <h2>Front End Developer</h2>
             <p>Welcome to my portfolio, here you can learn more about me. I've been studying programming for a few months, mostly Javascript,
                 Node.js and now React.js. This whole website was made using React.js. I'm looking forward to have a first opportunity as a Developer.
